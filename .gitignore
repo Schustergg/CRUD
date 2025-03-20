@@ -1,0 +1,54 @@
+# Ignore build output
+bin/
+obj/
+
+# User-specific files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Windows installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# JetBrains Rider
+.idea/
+
+# ASP.NET temporary files
+*aspnet_client/
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# Tye-specific files
+.tye/
+
+# User-specific .NET Core SDK files
+*.dotnet/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Thumbs.db
+Thumbs.db
+
+# Ignore IntelliJ and Rider
+.idea/
+
+# Ignore project dependency folders
+project.lock.json
+project.fragment.lock.json
