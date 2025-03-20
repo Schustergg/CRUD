@@ -67,16 +67,16 @@ namespace Crud.API.Controllers
 
             if (result.Succeeded)
             {
-                logger.LogInformation("Usuario " + loginUser.Email + " logado com sucesso");
+                logger.LogInformation($"User {loginUser.Email} successfully logged in.");
                 return CustomResponse(await GerarJwt(loginUser.Email));
             }
             if (result.IsLockedOut)
             {
-                NotifyError("Usuário temporariamente bloqueado por tentativas inválidas");
+                NotifyError("User temporarily locked due to invalid login attempts.");
                 return CustomResponse(loginUser);
             }
 
-            NotifyError("Usuário ou Senha incorretos");
+            NotifyError("Invalid username or password.");
             return CustomResponse(loginUser);
         }
 

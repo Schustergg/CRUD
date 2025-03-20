@@ -76,8 +76,8 @@ namespace Crud.API.Controllers
         public async Task<ActionResult<ProductViewModel>> Update(Guid id, ProductViewModel productViewModel)
         {
 
-            var produtoAtualizacao = await GetProduct(id);
-            if (produtoAtualizacao == null) return NotFound();
+            var product = await GetProduct(id);
+            if (product == null) return NotFound();
 
             if (!ModelState.IsValid) return CustomResponse(ModelState);
 
@@ -90,10 +90,10 @@ namespace Crud.API.Controllers
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var produto = await GetProduct(id);
-            if (produto == null) return NotFound();
+            var product = await GetProduct(id);
+            if (product == null) return NotFound();
 
-            await productService.Delete(mapper.Map<Product>(produto));
+            await productService.Delete(mapper.Map<Product>(product));
 
             return CustomResponse();
         }
