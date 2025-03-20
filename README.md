@@ -2,14 +2,6 @@
 
 ## Overview
 The **CRUD API** is a robust, scalable, and modular application designed with best practices in mind. It provides a clean and maintainable architecture following **Clean Code** principles and **SOLID** design patterns. The API is built to handle complex business logic while ensuring high performance and reliability.
-
-This project includes:
-- **Authentication and Authorization**: Secured endpoints using authentication and role-based authorization.
-- **API Versioning**: Supports versioning to ensure backward compatibility.
-- **Distributed Caching**: Implements Redis for distributed caching to improve performance.
-- **Error Handling**: Comprehensive error handling to provide a robust and fault-tolerant system.
-- **Scalable Architecture**: Designed with a modular and scalable architecture to support future growth.
-
 ---
 
 ## Features
@@ -34,7 +26,9 @@ This project includes:
 6. **Scalable and Modular Architecture**:
    - Built with a layered architecture to separate concerns.
    - Easily extendable for new features or modules.
-
+     
+7. **Unit Testing**:
+   - All endpoints are covered with automated unit tests using xUnit and Moq, ensuring full test coverage, isolated dependencies, and validation of both successful and error scenarios.
 ---
 
 ## API Endpoints
@@ -42,7 +36,7 @@ This project includes:
 ### Products Controller
 The `ProductsController` provides CRUD operations for managing products.
 
-#### **1. Get All Products (Paged)**
+## **1. Get All Products (Paged)**
 - **Endpoint**: `GET /api/v1/products`
 - **Description**: Retrieves a paginated list of products.
 - **Query Parameters**:
@@ -63,7 +57,7 @@ The `ProductsController` provides CRUD operations for managing products.
     "pageSize": 10
   }
 
-  ## 2. Get Product by ID
+## 2. Get Product by ID
 **Endpoint**: `GET /api/v1/products/{id}`  
 **Description**: Retrieves a product by its unique identifier.  
 **Path Parameters**:  
@@ -75,7 +69,6 @@ The `ProductsController` provides CRUD operations for managing products.
     "name": "string",
     "price": "decimal",
   }
----
 
 ## 3. Add a New Product
 **Endpoint**: `POST /api/v1/products`  
