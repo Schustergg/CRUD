@@ -62,25 +62,25 @@ The `ProductsController` provides CRUD operations for managing products.
 **Description**: Retrieves a product by its unique identifier.  
 **Path Parameters**:  
 - `id` (GUID): The unique identifier of the product.  
-**Response**:  
- ```json
-  {
-    "id": "guid",
-    "name": "string",
-    "price": "decimal",
-  }
+- **Response**:  
+    ```json
+     {
+       "id": "guid",
+       "name": "string",
+       "price": "decimal",
+     }
 
 ## 3. Add a New Product
 **Endpoint**: `POST /api/v1/products`  
 **Description**: Adds a new product to the system.  
 **Request Body**:  
 **Response**:  
- ```json
-  {
-    "id": "guid",
-    "name": "string",
-    "price": "decimal",
-  }
+    ```json
+     {
+       "id": "guid",
+       "name": "string",
+       "price": "decimal",
+     }
 ---
 
 ## 4. Update a Product
@@ -90,12 +90,12 @@ The `ProductsController` provides CRUD operations for managing products.
 - `id` (GUID): The unique identifier of the product.  
 **Request Body**:  
 **Response**:  
- ```json
-  {
-    "id": "guid",
-    "name": "string",
-    "price": "decimal",
-  }
+    ```json
+     {
+       "id": "guid",
+       "name": "string",
+       "price": "decimal",
+     }
 ---
 
 ## 5. Delete a Product
