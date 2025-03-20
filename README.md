@@ -108,7 +108,3 @@ The `ProductsController` provides CRUD operations for managing products.
 
 ---
 
-### Technologies Used
-- **.NET 8**: Framework for building the API.
-- **Redis**: Distributed caching system.
-- **AutoMapper**: For object-to-object mapping.
