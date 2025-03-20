@@ -74,14 +74,13 @@ The `ProductsController` provides CRUD operations for managing products.
 **Endpoint**: `POST /api/v1/products`  
 **Description**: Adds a new product to the system.  
 **Request Body**:  
-**Response**:  
-    ```json
-     {
+- **Response**:  
+   ```json
+      {
        "id": "guid",
        "name": "string",
        "price": "decimal",
-     }
----
+      }
 
 ## 4. Update a Product
 **Endpoint**: `PUT /api/v1/products/{id}`  
