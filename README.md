@@ -1,7 +1,8 @@
 # CRUD API
 
 ## Overview
-The **CRUD API** is a robust, scalable, and modular application designed with best practices in mind. It provides a clean and maintainable architecture following **Clean Code** principles and **SOLID** design patterns. The API is built to handle complex business logic while ensuring high performance and reliability.
+
+The **CRUD API** is a robust, scalable, and modular application designed with best practices in mind. The API is built to handle complex business logic while ensuring high performance and reliability.
 ---
 
 ## Features
